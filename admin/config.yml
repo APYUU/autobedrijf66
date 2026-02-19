@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: main # Dit moet overeenkomen met je branch op GitHub
+
+media_folder: "img" # Map waar foto's worden opgeslagen
+public_folder: "img"
+
+collections:
+  - name: "occasions"
+    label: "Auto's"
+    folder: "occasions" # Map waar de auto-bestanden worden opgeslagen
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Merk en Model", name: "title", widget: "string"}
+      - {label: "Beschrijving", name: "desc", widget: "text"}
+      - {label: "Bouwjaar", name: "year", widget: "string"}
+      - {label: "Kilometerstand", name: "km", widget: "string"}
+      - {label: "Brandstof", name: "fuel", widget: "select", options: ["Benzine", "Diesel", "Hybride", "Elektrisch"]}
+      - {label: "Hoofdfoto", name: "image", widget: "image"}
+      - {label: "Extra Foto's", name: "gallery", widget: "list", field: {label: "Foto", name: "img", widget: "image"}}
