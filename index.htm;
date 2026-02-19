@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobedrijf 66 | Exclusieve Occasions Dordrecht</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Autobedrijf 66">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#diensten">Diensten</a></li>
+                <li><a href="#voorraad">Voorraad</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Exclusiviteit & Perfectie</h1>
+            <p>Gespecialiseerd in inkoop, verkoop en hoogwaardige car care.</p>
+            <a href="#voorraad" class="btn-chrome">Bekijk Collectie</a>
+        </div>
+    </section>
+
+    <section id="diensten" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Onze Diensten</h2>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-handshake"></i><h3>Auto Inkoop & Verkoop</h3><p>Wij begeleiden de in- en verkoop van voertuigen met volledige discretie en persoonlijke service.</p></div>
+                <div class="service-card"><i class="fas fa-palette"></i><h3>Carwrapping & Designs</h3><p>Hoogwaardige carwraps en custom designs die uw voertuig een exclusieve uitstraling geven.</p></div>
+                <div class="service-card"><i class="fas fa-tint"></i><h3>Ramen Tinten</h3><p>Premium ruitentinting met warmte- en UV-werende folie voor comfort en privacy.</p></div>
+                <div class="service-card"><i class="fas fa-star"></i><h3>Sterrenhemel</h3><p>Op maat gemaakte sterrenhemel met keuze in kleur, intensiteit en verfijnde lichteffecten.</p></div>
+                <div class="service-card"><i class="fas fa-shield-virus"></i><h3>Custom Gordels</h3><p>Exclusieve veiligheidsgordels in custom kleuren voor een persoonlijke interieurafwerking.</p></div>
+                <div class="service-card"><i class="fas fa-circle-notch"></i><h3>Velgenherstel</h3><p>Professioneel herstel van velgen en diamant-cut afwerking voor een fabriekwaardige uitstraling.</p></div>
+                <div class="service-card highlight"><i class="fas fa-shield-halved"></i><h3>Paint Protection Film</h3><p>Onzichtbare, zelfherstellende lakbescherming tegen steenslag en krassen (PPF Front Package).</p></div>
+                <div class="service-card highlight"><i class="fas fa-magic"></i><h3>Poetsen & Polijsten</h3><p>Diepgaande lakcorrectie en hoogwaardige 4-laags bescherming voor maximale glans.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="voorraad" class="inventory-section">
+        <div class="container">
+            <h2 class="section-title">Huidig Aanbod</h2>
+            <div class="car-grid" id="car-list"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Offerte Aanvragen</h2>
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-group">
+                        <input type="text" name="naam" placeholder="Naam" required>
+                        <input type="email" name="email" placeholder="E-mailadres" required>
+                    </div>
+                    <textarea name="bericht" placeholder="In welke auto of dienst heeft u interesse?" rows="5" required></textarea>
+                    <button type="submit" class="btn-chrome">Verstuur Aanvraag</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="Logo">
+            </div>
+            <div class="footer-info">
+                <p><i class="fas fa-map-marker-alt"></i> Daltonstraat 8, 3316 GD Dordrecht</p>
+                <p><i class="fas fa-phone"></i> 06 21 39 82 84</p>
+                <p><i class="fas fa-envelope"></i> autobedrijf66@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Autobedrijf 66.</p>
+        </div>
+    </footer>
+
+    <div id="carModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-gallery">
+                <img id="modal-main-img" src="">
+                <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <div class="modal-text">
+                <h2 id="modal-title"></h2>
+                <p class="price-call">Voor prijsopgave vraag een offerte aan</p>
+                <p id="modal-desc"></p>
+                <a href="#contact" class="btn-chrome" onclick="closeModal()">Nu Aanvragen</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
