@@ -1,18 +1,178 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2709
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autobedrijf 66 | Exclusieve Occasions & Car Care Dordrecht</title>
+    <meta name="description" content="Dé specialist in Dordrecht voor exclusieve occasions, PPF, carwrapping en ruiten tinten aan de Daltonstraat 8.">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html>\
-<head>\
-  <meta charset="utf-8" />\
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
-  <title>Auto Beheer Paneel</title>\
-  <!-- De Decap CMS bibliotheek -->\
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>\
-</head>\
-<body></body>\
-</html>}
+    <!-- NAVIGATIE -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <!-- Verwijst direct naar logo.jpg in de hoofdmap -->
+                <img src="logo.jpg" alt="Autobedrijf 66">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#diensten">Diensten</a></li>
+                <li><a href="#voorraad">Voorraad</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Exclusiviteit & Perfectie</h1>
+            <p>Gespecialiseerd in inkoop, verkoop en hoogwaardige car care.</p>
+            <a href="#voorraad" class="btn-chrome">Bekijk Collectie</a>
+        </div>
+    </section>
+
+    <!-- DIENSTEN SECTION -->
+    <section id="diensten" class="services-section">
+        <div class="container">
+            <h2 class="section-title">Onze Diensten</h2>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Auto Inkoop & Verkoop</h3>
+                    <p>Wij begeleiden de in- en verkoop van voertuigen met volledige discretie, transparantie en persoonlijke service.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Carwrapping & Bespoke Designs</h3>
+                    <p>Hoogwaardige carwraps en custom designs die uw voertuig een exclusieve uitstraling geven en de lak beschermen.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-tint"></i>
+                    <h3>Ramen Tinten</h3>
+                    <p>Premium ruitentinting met warmte- en UV-werende folie voor meer comfort, privacy en een luxe uitstraling.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Sterrenhemel Installatie</h3>
+                    <p>Op maat gemaakte sterrenhemel, geïnspireerd op high-end luxury vehicles met verfijnde lichteffecten.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Custom Veiligheidsgordels</h3>
+                    <p>Exclusieve veiligheidsgordels in custom kleuren voor een persoonlijke en luxueuze afwerking van het interieur.</p>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-circle-notch"></i>
+                    <h3>Velgenherstel & Diamant-Cut</h3>
+                    <p>Professioneel herstel van velgen en diamant-cut afwerking voor een originele, fabriekwaardige uitstraling.</p>
+                </div>
+
+                <div class="service-card highlight">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Paint Protection Film (PPF)</h3>
+                    <p>Onzichtbare, zelfherstellende lakbescherming tegen steenslag en krassen. Ideaal voor het behoud van uw voertuig.</p>
+                    <ul class="sub-info">
+                        <li><strong>Front Package:</strong> Motorkap, Voorbumper, Zijschermen & Koplampen</li>
+                    </ul>
+                </div>
+
+                <div class="service-card highlight">
+                    <i class="fas fa-magic"></i>
+                    <h3>Poetsen & Polijsten</h3>
+                    <p>Diepgaande lakcorrectie gecombineerd met een hoogwaardige 4-laags bescherming voor maximale glans.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VOORRAAD SECTION -->
+    <section id="voorraad" class="inventory-section">
+        <div class="container">
+            <h2 class="section-title">Huidig Aanbod</h2>
+            <div class="car-grid" id="car-list">
+                <!-- JavaScript vult dit automatisch met de auto's -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Offerte Aanvragen</h2>
+                <form name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-group">
+                        <input type="text" name="naam" placeholder="Naam" required>
+                        <input type="email" name="email" placeholder="E-mailadres" required>
+                    </div>
+                    <textarea name="bericht" placeholder="In welke auto of dienst heeft u interesse?" rows="5" required></textarea>
+                    <button type="submit" class="btn-chrome">Verstuur Aanvraag</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.jpg" alt="Autobedrijf 66">
+            </div>
+            <div class="footer-info">
+                <h4>Contactgegevens</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Daltonstraat 8, 3316 GD Dordrecht</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:0621398284">06 21 39 82 84</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:autobedrijf66@gmail.com">autobedrijf66@gmail.com</a></p>
+            </div>
+            <div class="footer-socials">
+                <h4>Volg ons</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/autobedrijf66_" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@autobedrijf66" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://snapchat.com/t/MNhMZaO9" target="_blank"><i class="fab fa-snapchat"></i></a>
+                    <a href="https://wa.me/31621398284" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Autobedrijf 66. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- POPUP MODAL -->
+    <div id="carModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-gallery">
+                <img id="modal-main-img" src="" alt="">
+                <button class="nav-btn prev" onclick="changeImage(-1)">&#10094;</button>
+                <button class="nav-btn next" onclick="changeImage(1)">&#10095;</button>
+            </div>
+            <div class="modal-text">
+                <h2 id="modal-title"></h2>
+                <p class="price-call">Voor prijsopgave vraag een offerte aan</p>
+                <p id="modal-desc"></p>
+                <div id="modal-specs" class="specs-detail"></div>
+                <a href="#contact" class="btn-chrome" onclick="closeModal()">Direct Aanvragen</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
